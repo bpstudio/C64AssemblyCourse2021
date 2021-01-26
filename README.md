@@ -57,7 +57,9 @@ http://sta.c64.org/cbm64mem.html
 + A $d800 az mindig $d800 ! :) 
 + karakteres és grafikus üzemmódok
 + sprite-ok, sprite pointerek
-+ kép megjelenítése példa
+
+- SID
++ erről csak nagyon röviden. Music player rutinok
 
 - IRQ, megszakítások (VIC IRQ, NMI, stb)
 + egy vicces, jó leírás :) https://dustlayer.com/c64-coding-tutorials/2013/4/8/episode-2-3-did-i-interrupt-you
