@@ -4,7 +4,7 @@ Prerequisites
 - preferably Windows 10 PC
 - GitHub account
 - base programming skills
-- hexadecimal counting :) 
+- binary, decimal, hexadecimal :) 
 
 *Miről szól? A Commodore 64 programozásáról assembly nyelven a mai modern PCken. A harderről és az alap lehetőségekről. Hobbi szinten*
 
@@ -37,16 +37,21 @@ CPU, SID, VIC-II, CIA (I/O), memória
 + I/O area
 + ScreenRAM és ColorRAM
 + Zero Page, lapozás megértése
-+ Fix, mozgathatatlan memóriahelyek: $01, $0100-$01FF, IRQ vektorok ($fffa-$fffb(NMI) $fffe-$ffff (IRQ))
++ Fix, mozdíthatatlan memóriahelyek: $01, $0100-$01FF, IRQ vektorok ($fffa-$fffb(NMI) $fffe-$ffff (IRQ))
 
 https://www.c64-wiki.com/wiki/Memory_Map
 http://sta.c64.org/cbm64mem.html 
 
-
-- 6510 processzor, regiszterek, képességek (összeadás, kivonás, összehasonlítás, BCD (neeem), 
-- Mnemonikok, címzési módok, illegal opcodes (??)
+- 6510 processzor, regiszterek, képességek (összeadás, kivonás, összehasonlítás, BCD (neeem)
++ Utasítások (mnemonics), illegal opcodes (??)
++ Címzési módok - http://www.6502.org/tutorials/6502opcodes.html
++ Processzor státus flag-ek, A X Y regiszterek
++ Program Counter (PC)
++ Execution time: cycle
++ Verem (Stack) - FIFO
 
 - VIC-II (a videóprocesszor)
++ 16 szín (https://www.c64-wiki.com/wiki/Color)
 + busz megosztás a CPUval
 + csak 16k RAM-ot lát a VIC! Bank Switching/bankváltás
 + A $d800 az mindig $d800 ! :) 
@@ -55,6 +60,15 @@ http://sta.c64.org/cbm64mem.html
 + kép megjelenítése példa
 
 - IRQ, megszakítások (VIC IRQ, NMI, stb)
++ egy vicces, jó leírás :) https://dustlayer.com/c64-coding-tutorials/2013/4/8/episode-2-3-did-i-interrupt-you
 
-+ raszter effektek
-+ scroller
+
+TUTORIALS
++ Hello world
++ Border villogtatás
++ IRQ zenelejátszás
++ sprite mozgatás? Szinusszal?
++ Raszter effektek
++ Scroller
++ Grafika megjelenítése
+
