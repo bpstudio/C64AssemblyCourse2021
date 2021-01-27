@@ -44,6 +44,7 @@ http://sta.c64.org/cbm64mem.html
 - 6502/6510 processzor, regiszterek, képességek (összeadás, kivonás, összehasonlítás, BCD (neeem))
 http://www.6502.org/tutorials/6502opcodes.html
 + Utasítások (mnemonics), illegal opcodes (??)
++ bit műveletek, AND / OR
 + Címzési módok
 + Processzor státus flag-ek, A X Y regiszterek
 + Program Counter (PC), Stack Counter (SC)
