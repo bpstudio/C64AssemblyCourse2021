@@ -73,14 +73,15 @@ http://www.6502.org/tutorials/6502opcodes.html
 + fordítás
 + VICE monitor
 
-- Assembler funkciók
+- Assembler funkciók, fordítási időben kiadható "utasítások"
 + 64TASS manual (http://tass64.sourceforge.net) - Vigyázat! Nem csak C64 kódot tud fordítani! :) 
 + Konstansok, állandók
-+ Típusok (talán elég a byte és a text egyelőre :) )
++ Típusok (talán elég a byte és a text egyelőre)
 + Szimbólumok, anonymous szimbólumok ( + és - ), a csillag szimbólum ( * )
 + Bináris fájl befordítása
 + Fordítási direktívák
 + Ismétlések (for next) - speedcode
++ Memóriaterület feltöltése (fill)
 + Kódszervezés (szekciók, include több fájlból)
 + Makrók, procedúrák, namespace-ek
 + Műveletek: összeadás, kivonás, stb
