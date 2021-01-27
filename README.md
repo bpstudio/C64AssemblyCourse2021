@@ -4,7 +4,6 @@ Prerequisites
 - preferably Windows 10 PC
 - GitHub account
 - base programming skills
-- binary, decimal, hexadecimal :) 
 
 *Miről szól? A Commodore 64 programozásáról assembly nyelven a mai modern PCken. A hardverről és az alap lehetőségekről. Hobbi szinten*
 
@@ -16,6 +15,7 @@ Tematika:
 
 # Lesson 1
 - Programozási alapok, ugye mindenki tisztában van? Szekvencia, iteráció, szelekció? :) 
+- binary, decimal, hexadecimal :) 
 
 - Cross assembly lehetőségek (szövegszerkesztő, fordítók (assembler, compiler), tömörítők (compressor, "cruncher"), emulátor)
 Hogyan lehet felépíteni egy kényelmes fordító környezetet?
@@ -24,12 +24,14 @@ Hogyan lehet felépíteni egy kényelmes fordító környezetet?
 3. Tömörítők (command line tool-ok): pl. ByteBoozer2, Exomizer, stb
 4. Emulator: egyértelműen a VICE (https://vice-emu.sourceforge.io)
 
-
-- C64 hardware
+- A vas /  hardware
 Miből áll a C64? :)
 CPU, SID, VIC-II, CIA (I/O), memória
 
-- memory map/layout
+- A memória - memory map/layout
+https://www.c64-wiki.com/wiki/Memory_Map
+http://sta.c64.org/cbm64mem.html 
+
 64k RAM - 65536 byte tárolása ($0000 - $FFFF). 
 + 4k BASIC ROM ($A000 - $BFFFF)
 + 4k KERNAL ROM ($E000 - $FFFF)
@@ -39,23 +41,22 @@ CPU, SID, VIC-II, CIA (I/O), memória
 + Zero Page, lapozás megértése
 + Fix, mozdíthatatlan memóriahelyek: $01, $0100-$01FF, IRQ vektorok ($fffa-$fffb(NMI) $fffe-$ffff (IRQ))
 
-https://www.c64-wiki.com/wiki/Memory_Map
-http://sta.c64.org/cbm64mem.html 
-
 - 6502/6510 processzor, regiszterek, képességek (összeadás, kivonás, összehasonlítás, BCD (neeem))
+http://www.6502.org/tutorials/6502opcodes.html
 + Utasítások (mnemonics), illegal opcodes (??)
-+ Címzési módok - http://www.6502.org/tutorials/6502opcodes.html
++ Címzési módok
 + Processzor státus flag-ek, A X Y regiszterek
-+ Program Counter (PC)
++ Program Counter (PC), Stack Counter (SC)
 + Execution time: cycle
-+ Verem (Stack) - FILO
++ Verem (Stack) - LIFO (https://www.c64-wiki.com/wiki/Stack)
 
 - VIC-II (a videóprocesszor)
++ Képernyő felépítése, méretei
++ Karakteres és grafikus üzemmódok / Multicolor vs. Hires (https://codebase64.org/doku.php?id=base:built_in_screen_modes)
 + 16 szín (https://www.c64-wiki.com/wiki/Color)
-+ busz megosztás a CPUval
++ A busz megosztása a CPU és a VIC között
 + csak 16k RAM-ot lát a VIC! Bank Switching/bankváltás
 + A $d800 az mindig $d800 ! :) 
-+ karakteres és grafikus üzemmódok
 + sprite-ok, sprite pointerek
 
 - SID
@@ -63,7 +64,6 @@ http://sta.c64.org/cbm64mem.html
 
 - IRQ, megszakítások (VIC IRQ, NMI, stb)
 + egy vicces, jó leírás :) https://dustlayer.com/c64-coding-tutorials/2013/4/8/episode-2-3-did-i-interrupt-you
-
 
 TUTORIALS
 + Hello world
@@ -73,4 +73,8 @@ TUTORIALS
 + Raszter effektek
 + Scroller
 + Grafika megjelenítése
+
+RESOURCES
+Nagyon hasznos oldalak:
+https://codebase64.org/ Bármi, ami C64 programozás, az egyik (ha nem) a legjobb ilyen oldal
 
