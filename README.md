@@ -53,6 +53,7 @@ http://www.6502.org/tutorials/6502opcodes.html
 
 - VIC-II (a videóprocesszor)
 + Képernyő felépítése, méretei
++ 50Hz, másodpercenként 50 frame megjelenítése, azaz hgoyan rajzolja ki a képet a C64?
 + Karakteres és grafikus üzemmódok / Multicolor vs. Hires (https://codebase64.org/doku.php?id=base:built_in_screen_modes)
 + 16 szín (https://www.c64-wiki.com/wiki/Color)
 + A busz megosztása a CPU és a VIC között
