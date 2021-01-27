@@ -15,7 +15,7 @@ Tematika:
 
 # Lesson 1
 - Programozási alapok, ugye mindenki tisztában van? Szekvencia, iteráció, szelekció? :) 
-- binary, decimal, hexadecimal :) 
+- binary ( % ), decimal ( # ) , hexadecimal ( $ ) 
 
 - Cross assembly lehetőségek (szövegszerkesztő, fordítók (assembler, compiler), tömörítők (compressor, "cruncher"), emulátor)
 Hogyan lehet felépíteni egy kényelmes fordító környezetet?
@@ -27,6 +27,8 @@ Hogyan lehet felépíteni egy kényelmes fordító környezetet?
 - A vas /  hardware
 Miből áll a C64? :)
 CPU, SID, VIC-II, CIA (I/O), memória
+Nincs API, nincs abstraction layer, a C64 assemblyvel kötvetlenül a processzort programozzuk! Ha fagy, akkor valami nem jó :) 
+Nincs standard, amit követni kellene - általános az önmódosító kód!
 
 - A memória - memory map/layout
 https://www.c64-wiki.com/wiki/Memory_Map
@@ -43,7 +45,9 @@ http://sta.c64.org/cbm64mem.html
 
 - 6502/6510 processzor, regiszterek, képességek (összeadás, kivonás, összehasonlítás, BCD (neeem))
 http://www.6502.org/tutorials/6502opcodes.html
-+ Utasítások (mnemonics), illegal opcodes (??)
++ Utasítások (mnemonics), illegal opcodes (??), mennyi időbe telik az utasítás futtatás? (CPU cycle)
++ utasítások felépítése a memóriában ( jsr $1864 = $20 $64 $18 )
++ Branch-ek, és azok határai
 + bit műveletek, AND / OR
 + Címzési módok
 + Processzor státus flag-ek, A X Y regiszterek
@@ -60,9 +64,28 @@ http://www.6502.org/tutorials/6502opcodes.html
 + csak 16k RAM-ot lát a VIC! Bank Switching/bankváltás
 + A $d800 az mindig $d800 ! :) 
 + sprite-ok, sprite pointerek
++ PETSCII vs Screen Codes
 
 - SID
 + erről csak nagyon röviden. Music player rutinok
+
+- Cross assembly környezet kialakítása
++ fordítás
++ VICE monitor
+
+- Assembler funkciók
++ 64TASS manual (http://tass64.sourceforge.net) - Vigyázat! Nem csak C64 kódot tud fordítani! :) 
++ Konstansok, állandók
++ Típusok (talán elég a byte és a text egyelőre :) )
++ Szimbólumok, anonymous szimbólumok ( + és - ), a csillag szimbólum ( * )
++ Bináris fájl befordítása
++ Fordítási direktívák
++ Ismétlések (for next) - speedcode
++ Kódszervezés (szekciók, include több fájlból)
++ Makrók, procedúrák, namespace-ek
++ Műveletek: összeadás, kivonás, stb
++ Text encoding (.enc "screen")
++ Kommentálás
 
 - IRQ, megszakítások (VIC IRQ, NMI, stb)
 + egy vicces, jó leírás :) https://dustlayer.com/c64-coding-tutorials/2013/4/8/episode-2-3-did-i-interrupt-you
