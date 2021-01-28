@@ -103,4 +103,6 @@ TUTORIALS
 RESOURCES
 Nagyon hasznos oldalak:
 https://codebase64.org/ Bármi, ami C64 programozás, az egyik (ha nem) a legjobb ilyen oldal
+http://unusedino.de/ec64/technical/aay/c64/ Ninja/TheDreams reference
+
 
